@@ -1,0 +1,47 @@
+<body> 
+	<div id="calculator">
+		<div id="display">
+		</div>
+		<div id="keys">
+			<div>
+				<button type="button" id="btn_seven" class="btn">7</button>
+				<button type="button" id="btn_eight" class="btn">8</button>
+				<button type="button" id="btn_nine" class="btn">9</button>
+				<button type="button" id="btn_divide" class="btn">&divide;</button>
+			</div>
+			<div>
+				<button type="button" id="btn_four" class="btn">4</button>
+				<button type="button" id="btn_five" class="btn">5</button>
+				<button type="button" id="btn_six" class="btn">6</button>
+				<button type="button" id="btn_multiply" class="btn">X</button>
+			</div>
+			<div>
+				<button type="button" id="btn_one" class="btn">1</button>
+				<button type="button" id="btn_two" class="btn">2</button>
+				<button type="button" id="btn_three" class="btn">3</button>
+				<button type="button" id="btn_minus" class="btn">-</button>
+			</div>
+			<div>
+				<button type="button" id="btn_zero" class="btn">0</button>
+				<button type="button" id="btn_period" class="btn">.</button>
+				<button type="button" id="btn_exp" class="btn">^</button>
+				<button type="button" id="btn_plus" class="btn">+</button>
+			</div>
+			<div>
+				<button type="button" id="btn_clear" class="btn">AC</button>
+				<button type="button" id="btn_equals" class="btn">=</button>
+			</div>
+		</div>
+	</div>	
+	<div id="calcs">	
+		<ul>
+			{{#each calcs}}
+				{{> calculation}}
+			{{/each}}
+		</ul>
+	</div>
+</body>
+
+<template name="calculation">
+	<li>{{calc}}</li>
+</template>
